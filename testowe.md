@@ -1,5 +1,5 @@
 ```blocks
-custom.fib(4)
+
 
 ```
 ## Zadanie pierwsze
@@ -12,5 +12,6 @@ Agent ma do wyboru jedną z trzech płytek naciskowej, musi stanąć na dowolnej
 W tym celu użyj bloczka `||agent:Przesuń||` wybierająć odpowiedni kierunek.
 Nie zapomnij o zmianie odległości na jąką musi przejśc agent na 3 kratki
 ```blocks
+custom.fib(4)
 agent.move(RIGHT, 3)
 ```
