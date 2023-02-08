@@ -1,7 +1,4 @@
-```blocks
 
-
-```
 ## Zadanie pierwsze
 Postaw agenta na niebieskiej wełnie
 
