@@ -1,9 +1,7 @@
-
-## Zadanie pierwsze
-Postaw agenta na niebieskiej wełnie
-
-## Krok 1
-Agent ma do wyboru jedną z trzech płytek naciskowej, musi stanąć na dowolnej z nich
+```blocks
+custom.fib(4)
+agent.move(RIGHT, 3)
+```
 
 ## Krok 2
 W tym celu użyj bloczka `||custom.fib(4)||` wybierająć odpowiedni kierunek.
