@@ -1,5 +1,5 @@
 ```blocks
-custom.fib(4)
+custom.foo(5, "Hello", MyEnum.One)
 agent.move(RIGHT, 3)
 ```
 
