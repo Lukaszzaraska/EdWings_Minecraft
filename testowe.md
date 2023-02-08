@@ -1,5 +1,5 @@
 ```blocks
-custom.fib()
+custom.fib(4)
 
 ```
 ## Zadanie pierwsze
