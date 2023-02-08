@@ -6,7 +6,7 @@ Postaw agenta na niebieskiej wełnie
 Agent ma do wyboru jedną z trzech płytek naciskowej, musi stanąć na dowolnej z nich
 
 ## Krok 2
-W tym celu użyj bloczka `||agent:Przesuń||` wybierająć odpowiedni kierunek.
+W tym celu użyj bloczka `||custom.fib(4)||` wybierająć odpowiedni kierunek.
 Nie zapomnij o zmianie odległości na jąką musi przejśc agent na 3 kratki
 ```blocks
 custom.fib(4)
