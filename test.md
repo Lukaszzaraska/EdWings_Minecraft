@@ -1,4 +1,7 @@
+```blocks
+custom.fib()
 
+```
 ## Zadanie pierwsze
 Postaw agenta na niebieskiej wełnie
 
