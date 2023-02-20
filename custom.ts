@@ -1,15 +1,14 @@
-const wheatT = Item.Wheat
-enum SeedType{
-    //% blockIdentity="blocks.item"
-    //% block="Wheat"
-    wheatT
+
+enum SeedType {
+    //% block="wheat"
+    Wheat,
+    //% block="beetroot"
+    Beetroot,
+    //% block="carrot"
+    Carrot,
+    //% block="potato"
+    Potato
 }
-// enum SeedType {
-//     //% block="Wheat"
-//     Wheat,
-//     //% block="Bert"
-//     Bert
-// }
 enum Stage {
     //% block="0"
     ZERO=0,
