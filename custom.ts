@@ -1,17 +1,17 @@
 
 enum SeedType {
     //% block="wheat"
-    Wheat,
+    WHEAT,
     //% block="beetroot"
-    Beetroot,
+    BEETROOT,
     //% block="carrot"
-    Carrot,
+    CARROT,
     //% block="potato"
-    Potato,
+    POTATO,
     //% block="pumpkin"
-    Pumpkin,
+    PUMPKIN,
     //% block="melon"
-    Melon
+    MELON
 }
 enum Stage {
     //% block="0"
@@ -36,6 +36,7 @@ namespace Harvest{
 
     //% block="Test $typeSeed stage $stage on %pos=minecraftCreatePosition"
     export function SeedTest(typeSeed:SeedType,stage:Stage,pos:Position): boolean {
+        player.say(typeSeed)
         if (blocks.testForBlock(blocks.blockWithData(typeSeed, stage), pos)) {
             return true
         }else{
