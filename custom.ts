@@ -7,7 +7,11 @@ enum SeedType {
     //% block="carrot"
     Carrot,
     //% block="potato"
-    Potato
+    Potato,
+    //% block="pumpkin"
+    Pumpkin,
+    //% block="melon"
+    Melon
 }
 enum Stage {
     //% block="0"
