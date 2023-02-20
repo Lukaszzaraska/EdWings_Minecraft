@@ -1,38 +1,42 @@
 
-/**
-* Użyj tego pliku, aby zdefiniować niestandardowe funkcje i bloki.
-* Czytaj więcej na https://minecraft.makecode.com/blocks/custom
-*/
-
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
+// const wheatT = Item.Wheat
+// enum SeedType{
+// //% block = "Wheat"
+// WHEAT
+// }
+enum SeedType {
+    //% block="Wheat"
+    Wheat,
+    //% block="Bert"
+    Bert
 }
+enum Stage {
+    //% block = "0"
+    ZERO=0,
+    //% block = "1"
+    ONE,
+    //% block = "2"
+    TWO,
+    //% block = "3"
+    THREE,
+    //% block = "4"
+    FOUR,
+    //% block = "5"
+    FIVE,
+    //% block = "6"
+    SIX,
+    //% block = "7"
+    SEVEN
+}
+//% color=190 weight=100 
+namespace Harvest{
 
-/**
- * Custom blocks
- */
-//% weight=100 color=#0fbc11 icon=""
-namespace custom {
-    /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
-     */
-    //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
-    }
-
-    /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
-     */
-    //% block
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
-    }
+    //% block = "Test  %pos=minecraftCreatePosition"
+    export function SeedStageTest(typeSeed:SeedType,stage:Stage,pos:Position): boolean {
+        if (blocks.testForBlock(blocks.blockWithData(typeSeed, stage), pos)) {
+            return true
+        }else{
+            return false
+        }
+        }
 }
