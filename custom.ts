@@ -1,17 +1,16 @@
-
-enum SeedType {
+const enum SeedType {
     //% block="wheat"
-    WHEAT,
+    WHEAT="WHEAT",
     //% block="beetroot"
-    BEETROOT,
+    BEETROOT ="BEETROOT",
     //% block="carrot"
-    CARROT,
+    CARROT ="CARROT",
     //% block="potato"
-    POTATO,
+    POTATO ="POTATO",
     //% block="pumpkin"
-    PUMPKIN_STEM,
+    PUMPKIN_STEM ="PUMPKIN_STEM",
     //% block="melon"
-    MELON_STEM
+    MELON_STEM ="MELON_STEM"
 }
 enum Stage {
     //% block="0"
