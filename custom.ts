@@ -90,11 +90,12 @@ let FindBlock:number
 namespace blocks {
     //% block="Find block on %pos=minecraftCreatePosition"
     export function BlockTestOnPosition(pos: Position): any {
-        BlockName.forEach((block)=>{
-            if (blocks.testForBlock(block, pos)){
-               FindBlock=block
-            }
-        })
+//         BlockName.forEach((block)=>{
+//             if (blocks.testForBlock(block, pos)){
+//                FindBlock=block
+//             }
+//         })
+        FindBlock =  BlockName.filter(x => blocks.testForBlock(x, pos)==true)[0]
         return blocks.blockById(FindBlock)
     }
 
