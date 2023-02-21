@@ -96,7 +96,7 @@ namespace Harvest {
 }
 let FindBlock: number
 namespace blocks {
-    //% block="Find block on %pos=minecraftCreatePosition"
+    //% block="Check block on %pos=minecraftCreatePosition"
     export function BlockTestOnPosition(pos: Position): number {
         FindBlock = BlockName.find(x => blocks.testForBlock(x, pos) == true)
         return blocks.blockById(FindBlock)
