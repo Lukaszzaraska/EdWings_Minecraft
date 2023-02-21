@@ -81,21 +81,24 @@ namespace Harvest {
             return false
         }
     }
-    //% block="Test $typeSeed stage $stage on %pos=minecraftCreatePosition"
-    export function StageTest(typeSeed: SeedType, stage: Stage, pos: Position): number {
-       return 1
+   //% block="Test stage on %pos=minecraftCreatePosition"
+    export function StageTest(pos: Position): number {
+        
+        for(let x=0;x<8;x++)
+        {
+            if (blocks.testForBlock(blocks.blockWithData(blocks.blockById(blocks.BlockTestOnPosition(pos)), x), pos)) {
+                return x
+            }
+        }
+       
+        return null
     }
 }
-let FindBlock:number
+let FindBlock: number
 namespace blocks {
     //% block="Find block on %pos=minecraftCreatePosition"
-    export function BlockTestOnPosition(pos: Position): any {
-//         BlockName.forEach((block)=>{
-//             if (blocks.testForBlock(block, pos)){
-//                FindBlock=block
-//             }
-//         })
-        FindBlock =  BlockName.find(x => blocks.testForBlock(x, pos)==true)
+    export function BlockTestOnPosition(pos: Position): number {
+        FindBlock = BlockName.find(x => blocks.testForBlock(x, pos) == true)
         return blocks.blockById(FindBlock)
     }
 
