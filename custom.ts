@@ -86,7 +86,7 @@ namespace Harvest {
        return 1
     }
 }
-let FindBlock:number = 0
+let FindBlock:number
 namespace blocks {
     //% block="Find block on %pos=minecraftCreatePosition"
     export function BlockTestOnPosition(pos: Position): any {
