@@ -69,7 +69,7 @@ let BlockName = [
     769,770,771,772,773,774,775,776,777,778,779,780,781,782,783,784,785,786,787,788,789
 ]
 
-//% color=190 weight=100 
+//% color=190 weight=100 icon=
 namespace Harvest {
 
     //% block="Test $typeSeed stage $stage on %pos=minecraftCreatePosition"
