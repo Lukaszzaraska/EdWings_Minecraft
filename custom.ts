@@ -9,9 +9,9 @@ enum SeedType {
     //% block="potato"
     POTATO,
     //% block="pumpkin"
-    PUMPKIN_SEEDS,
+    PUMPKIN_STEM,
     //% block="melon"
-    MELON_SEEDS
+    MELON_STEM
 }
 enum Stage {
     //% block="0"
