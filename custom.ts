@@ -3,7 +3,7 @@ const enum SeedType {
     //% block="wheat"
     WHEAT = 296,
     //% block="beetroot"
-    BEETROOT = 458,
+    BEETROOT = 462,
     //% block="carrot"
     CARROT = 391,
     //% block="potato"
