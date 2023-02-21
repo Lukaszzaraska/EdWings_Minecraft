@@ -1,3 +1,4 @@
+//% emitAsConstant
 const enum SeedType {
     //% block="wheat"
     WHEAT="WHEAT",
