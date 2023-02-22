@@ -86,10 +86,10 @@ namespace Harvest {
     }
     //% blockId=TestStageOnPosition
     //% block="Test stage on %pos=minecraftCreatePosition"
-    export function StageTest(pos: Position): number {
-
-        for (let x = 0; x < 8; x++) {
-            if (blocks.testForBlock(blocks.blockWithData(blocks.blockById(blocks.BlockTestOnPosition(pos)), x), pos)) {
+  export function StageTest(pos: Position): number {
+        let blockInPosition = blocks.BlockTestOnPosition(pos)
+        for (let x = 0; x < 10; x++) {
+            if (blocks.blockWithData(blocks.blockById(blockInPosition), x)) {
                 return x
             }
         }
