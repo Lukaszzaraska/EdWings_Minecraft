@@ -107,6 +107,7 @@ namespace Harvest {
 
     //% blockId=ChangeFarmlandHydration
     //% block="Change to $hydration Farmland on %pos=minecraftCreatePosition"
+    //do poprawy za długo sie robi inny test 
     export function ChangeHydration(hydration:HydrationType,pos: Position): void {
         let blockInPosition = blocks.BlockTestOnPosition(pos)
         if(blockInPosition==60||blockInPosition==458812){
