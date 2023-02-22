@@ -69,6 +69,14 @@ let BlockName = [
     769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789
 ]
 
+//% emitAsConstant
+enum HydrationType {
+    //% block="Not_hydrated"
+    NOT_HYDRATED = 0,
+
+    //% block="Hydrated"
+    HYDRATED = 1
+}
 //% color=190 weight=100 icon=
 namespace Harvest {
     /**
@@ -86,7 +94,7 @@ namespace Harvest {
     }
     //% blockId=TestStageOnPosition
     //% block="Test stage on %pos=minecraftCreatePosition"
-  export function StageTest(pos: Position): number {
+    export function StageTest(pos: Position): number {
         let blockInPosition = blocks.BlockTestOnPosition(pos)
         for (let x = 0; x < 10; x++) {
             if (blocks.blockWithData(blocks.blockById(blockInPosition), x)) {
@@ -96,21 +104,28 @@ namespace Harvest {
 
         return null
     }
-     /**
-        * Change Hydration Farmland in a given position
-    */
+
     //% blockId=ChangeFarmlandHydration
-    //% block="Change Hydration Farmland on %pos=minecraftCreatePosition"
-    export function ChangeHydration(pos: Position): void {
+    //% block="Change to $hydration Farmland on %pos=minecraftCreatePosition"
+    export function ChangeHydration(hydration:HydrationType,pos: Position): void {
         let blockInPosition = blocks.BlockTestOnPosition(pos)
         if(blockInPosition==60||blockInPosition==458812){
-            if (blocks.testForBlock(blocks.blockWithData(FARMLAND, 0), pos)) {
+            if (hydration==HydrationType.HYDRATED) {
                 blocks.place(blocks.blockWithData(FARMLAND, 7), pos)
             } else {
                 blocks.place(blocks.blockWithData(FARMLAND, 0), pos)
             }
         }else{
             player.say("Its not Farmland")
+        }
+    }
+    //% blockId=TestHydrationFarmland
+    //% block="Get Hydration on %pos=minecraftCreatePosition"
+    export function TestHydration(pos: Position): boolean {
+        if (blocks.testForBlock(blocks.blockWithData(FARMLAND, 0), pos)) {
+            return false
+        } else {
+           return true
         }
     }
 }
