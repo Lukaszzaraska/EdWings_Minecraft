@@ -96,6 +96,23 @@ namespace Harvest {
 
         return null
     }
+     /**
+        * Change Hydration Farmland in a given position
+    */
+    //% blockId=ChangeFarmlandHydration
+    //% block="Change Hydration Farmland on %pos=minecraftCreatePosition"
+    export function ChangeHydration(pos: Position): void {
+        let blockInPosition = blocks.BlockTestOnPosition(pos)
+        if(blockInPosition==60||blockInPosition==458812){
+            if (blocks.testForBlock(blocks.blockWithData(FARMLAND, 0), pos)) {
+                blocks.place(blocks.blockWithData(FARMLAND, 7), pos)
+            } else {
+                blocks.place(blocks.blockWithData(FARMLAND, 0), pos)
+            }
+        }else{
+            player.say("Its not Farmland")
+        }
+    }
 }
 let FindBlock: number
 namespace blocks {
