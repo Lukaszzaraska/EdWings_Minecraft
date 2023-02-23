@@ -122,12 +122,14 @@ namespace Harvest {
     }
     //% blockId=TestHydrationFarmland
     //% block="Get Hydration on %pos=minecraftCreatePosition"
-    export function TestHydration(pos: Position): boolean {
+    export function TestHydration(pos: Position): string {
         if (blocks.testForBlock(blocks.blockWithData(FARMLAND, 0), pos)) {
-            return false
-        } else {
-           return true
-        }
+            return blocks.blockById(0)
+        } else if(blocks.testForBlock(blocks.blockWithData(FARMLAND, 7), pos)) 
+         {
+           return blocks.blockById(458812)
+        }else{
+           return "Its not farmland"
     }
 }
 let FindBlock: number
