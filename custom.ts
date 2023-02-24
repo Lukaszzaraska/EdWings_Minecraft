@@ -100,7 +100,6 @@ namespace Harvest {
         for (let x = 0; x < 10; x++) {
             if (blocks.testForBlock(blocks.blockWithData(blockInPosition, x), pos)) {
                 result=x
-                break
             } 
         }
 
