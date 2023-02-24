@@ -122,15 +122,16 @@ namespace Harvest {
             player.say("Its not Farmland")
         }
     }
-    //% blockId=TestHydrationFarmland
+      //% blockId=TestHydrationFarmland
     //% block="Get Hydration on %pos=minecraftCreatePosition"
-       export function TestHydration(pos: Position): string {
+    export function TestHydration(pos: Position): number {
         if (blocks.testForBlock(blocks.blockWithData(FARMLAND, 0), pos)) {
-            return blocks.blockById(0).toString()
+            return blocks.blockById(60)
         } else if (blocks.testForBlock(blocks.blockWithData(FARMLAND, 7), pos)) {
-            return blocks.blockById(458812).toString()
+            return blocks.blockById(458812)
         } else {
-            return "Its not farmland"
+            player.say("Its not farmland")
+            return null
         }
     }
 }
