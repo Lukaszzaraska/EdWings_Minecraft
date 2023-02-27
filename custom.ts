@@ -32,7 +32,7 @@ enum Stage {
     SEVEN
 }
 
-let BlockName:number[] = [
+const BlockName:number[] = [
     2, 0, 1, 65537, 131073, 196609, 262145, 327681, 393217,
     3, 65539, 4, 5, 65541, 131077, 196613, 262149, 327685, 6, 65542, 131078, 196614, 262150, 327686, 7, 8, 10,
     12, 65548, 13, 14, 15, 16, 17, 65553, 131089, 196625, 18, 65554, 131090, 196626, 19, 65555, 20, 21, 22, 196631, 24,
@@ -144,7 +144,7 @@ namespace blocks {
     //% block="Find block on %pos=minecraftCreatePosition"
     export function BlockTestOnPosition(pos: Position): number {
         FindBlock = BlockName.find(x => blocks.testForBlock(x, pos) == true)
-        return blocks.blockById(FindBlock)
+        return FindBlock
     }
 
 }
