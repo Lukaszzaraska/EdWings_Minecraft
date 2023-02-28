@@ -633,7 +633,7 @@ namespace Harvest {
         }
     }
 }
-let FindBlock: number
+
 namespace blocks {
     /**
         * Detects what object is placed in a given position
@@ -641,8 +641,7 @@ namespace blocks {
     //% blockId=FindBlockOnPosition
     //% block="Find block on %pos=minecraftCreatePosition"
     export function BlockTestOnPosition(pos: Position): number {
-        FindBlock = BlockName.find(x => blocks.testForBlock(x, pos) == true)
-        return FindBlock
+        return BlockName.find(x => blocks.testForBlock(x, pos) == true)
     }
 
 }
