@@ -595,7 +595,7 @@ namespace Harvest {
     //% block="Test stage on %pos=minecraftCreatePosition"
    export function StageTest(pos: Position): number {
         let result:number
-        let blockInPosition = blocks.BlockTestOnPosition(pos)
+        let blockInPosition = blocks.BlockTestOnPositionAsync(pos)
         for (let x = 0; x < 10; x++) {
             if (blocks.testForBlock(blocks.blockWithData(blockInPosition, x), pos)) {
                 result=x
@@ -641,7 +641,7 @@ namespace blocks {
     //% promise
     //% blockId=FindBlockOnPosition
     //% block="Find block on %pos=minecraftCreatePosition"
-    export function BlockTestOnPosition(pos: Position): number {
+    export function BlockTestOnPositionAsync(pos: Position): number {
         return BlockName.find(x => blocks.testForBlock(x, pos) == true)
     }
 
