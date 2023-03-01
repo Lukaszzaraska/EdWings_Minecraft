@@ -638,6 +638,7 @@ namespace blocks {
     /**
         * Detects what object is placed in a given position
     */
+    //% promise
     //% blockId=FindBlockOnPosition
     //% block="Find block on %pos=minecraftCreatePosition"
     export function BlockTestOnPosition(pos: Position): number {
