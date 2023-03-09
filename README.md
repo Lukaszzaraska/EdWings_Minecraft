@@ -6,7 +6,7 @@
 Return: **Id block** which is located at the given coordinates
 ### Harvest  __[New]__
 >Name: Test **typeSeed** stage **stage** on **Position**<br>
-Return: True/False
+Return: Boolean
 
 >Name: Test stage on **Position**<br>
 Return: Number 
