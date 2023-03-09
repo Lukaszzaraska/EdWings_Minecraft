@@ -7,3 +7,12 @@ Return: **Id block** which is located at the given coordinates
 ### Harvest  __[New]__
 >Name: Test **typeSeed** stage **stage** on **Position**<br>
 Return: True/False
+
+>Name: Test stage on **Position**<br>
+Return: Number 
+
+>Name: Change to **hydration** Farmland on **Position**
+Return: Void
+
+>Name: Get Hydration on **Position**
+Return: Number
