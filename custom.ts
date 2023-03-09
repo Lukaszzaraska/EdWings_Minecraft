@@ -11,7 +11,13 @@ const enum SeedType {
     //% block="pumpkin"
     PUMPKIN_STEM = 104,
     //% block="melon"
-    MELON_STEM = 105
+    MELON_STEM = 105,
+    //% block="nether wart"
+    NETHER_WART=115,
+    //% block="cocoa"
+    COCOA=127,
+    //% block="Berry"
+    SWEET_BERRY_BUSH=462
 }
 const SeedTypeArray :number[]=[
     296,
