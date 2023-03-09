@@ -676,7 +676,7 @@ namespace blocks {
     export function DataValueBlockTest(block:Block,pos: Position): number {
         let result: number
         let blockInPosition = block
-        for (let x = 0; x < 15; x++) {
+        for (let x = 0; x < 16; x++) {
             if (blocks.testForBlock(blocks.blockWithData(blockInPosition, x), pos)) {
                 result = x
             }
