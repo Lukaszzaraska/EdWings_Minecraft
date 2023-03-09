@@ -5,7 +5,7 @@
 >Name: Check block on **Position**   *[SLOW]*<br>
 Return: **Id block** which is located at the given coordinates
 ### Harvest  __[New]__
->Name: Test **typeSeed** stage **stage** on **Position**<br>
+>Name: Test **typeSeed** **stage** on **Position**<br>
 Return: Boolean
 
 >Name: Test stage on **Position**<br>
