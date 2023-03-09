@@ -596,7 +596,7 @@ namespace Harvest {
    export function StageTest(pos: Position): number {
         let result:number
         let blockInPosition = blocks.BlockTestOnPositionAsync(pos)
-        for (let x = 0; x < 10; x++) {
+        for (let x = 0; x < 15; x++) {
             if (blocks.testForBlock(blocks.blockWithData(blockInPosition, x), pos)) {
                 result=x
             } 
