@@ -608,7 +608,7 @@ namespace Harvest {
     //% block="Test Seeds stage on %pos=minecraftCreatePosition"
     export function StageTest(pos: Position): number {
         let result: number
-        let blockInPosition = blocks.SeedsTestOnPositionAsync(pos)
+        let blockInPosition = blocks.SeedsTestOnPosition(pos)
         for (let x = 0; x < 8; x++) {
             if (blocks.testForBlock(blocks.blockWithData(blockInPosition, x), pos)) {
                 result = x
@@ -651,16 +651,14 @@ namespace blocks {
     /**
         * Detects what object is placed in a given position
     */
-    //% promise
     //% blockId=FindBlockOnPosition
     //% block="Find block on %pos=minecraftCreatePosition"
     export function BlockTestOnPositionAsync(pos: Position): number {
         return BlockName.find(x => blocks.testForBlock(x, pos) == true)
     }
 
-    //% promise
     //% blockId=FindBlockOnPosition
-    export function SeedsTestOnPositionAsync(pos: Position): number {
+    export function SeedsTestOnPosition(pos: Position): number {
         return SeedTypeArray.find(x => blocks.testForBlock(x, pos) == true)
     }
     //% blockId=TestDataValueOnPosition
