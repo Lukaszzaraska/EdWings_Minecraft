@@ -641,7 +641,6 @@ namespace Harvest {
         } else if (blocks.testForBlock(blocks.blockWithData(FARMLAND, 7), pos)) {
             return blocks.blockById(458812)
         } else {
-            player.say("Its not farmland")
             return null
         }
     }
