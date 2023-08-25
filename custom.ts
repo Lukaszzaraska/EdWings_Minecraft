@@ -21,7 +21,7 @@ const enum SeedType {
 }
 const SeedTypeArray :number[]=[
     296,
-    462,
+    458,
     391,
     392,
     105
