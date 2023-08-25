@@ -3,7 +3,7 @@ const enum SeedType {
     //% block="wheat"
     WHEAT = 296,
     //% block="beetroot"
-    BEETROOT = 458,
+    BEETROOT = 244,
     //% block="carrot"
     CARROT = 391,
     //% block="potato"
@@ -21,7 +21,7 @@ const enum SeedType {
 }
 const SeedTypeArray :number[]=[
     296,
-    458,
+    244,
     391,
     392,
     105
