@@ -24,7 +24,8 @@ const SeedTypeArray :number[]=[
     244,
     391,
     392,
-    105
+    105,
+    127
 ]
 enum Stage {
     //% block="0"
